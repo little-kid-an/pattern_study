@@ -1,8 +1,4 @@
-/**
- * TNG Digital Sdn Bhd
- * Copyright (c) 2017-2025 All Rights Reserved.
- */
-package org.gxa.builder.DSLBuilderDemo;
+package org.gxa.builder.dslbuilderdemo;
 
 /**
  * @author Guo Xi'an
@@ -10,10 +6,11 @@ package org.gxa.builder.DSLBuilderDemo;
  */
 public class Demo {
     public static void main(String[] args) {
-//        System.out.println(SQL.select("id", "name").from("user").where("id = 1").build());
         System.out.println(SQL.update().table("user").set("name", "dongsheng").set("age", "18").where("id = 1").build());
         System.out.println(SQL.select().from("user").where("id = 1").and("name = 'dongsheng'").and("age = 18").build());
         SQL.update().table("user").set("name", "dongsheng").where("id = 1").build();
-
+        System.out.println(SQL.update().table("user").set("name", "dongsheng.hds").where("id = 1").and("age = 18").build());
+        System.out.println(SQL.insert().into("user").values("name", "dongsheng").values("age", "18").build());
+        System.out.println(SQL.delete().from("user").where("id = 1").and("name = 'dongsheng'").build());
     }
 }

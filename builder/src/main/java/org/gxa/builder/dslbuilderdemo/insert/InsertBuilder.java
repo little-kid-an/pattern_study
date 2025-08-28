@@ -1,10 +1,6 @@
-/**
- * TNG Digital Sdn Bhd
- * Copyright (c) 2017-2025 All Rights Reserved.
- */
-package org.gxa.builder.DSLBuilderDemo.insert;
+package org.gxa.builder.dslbuilderdemo.insert;
 
-import org.gxa.builder.DSLBuilderDemo.BuildStage;
+import org.gxa.builder.dslbuilderdemo.common.BuildStage;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,7 +8,7 @@ import java.util.List;
 /**
  * @author Guo Xi'an
  */
-public class InsertBuilder implements IntoStage, ValuesStage, BuildStage {
+public class InsertBuilder implements IntoStage, ValuesStage {
     private String table;
     private final List<String> columns = new ArrayList<>();
     private final List<String> values = new ArrayList<>();

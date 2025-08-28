@@ -1,7 +1,7 @@
 /**
  * TNG Digital Sdn Bhd Copyright (c) 2017-2025 All Rights Reserved.
  */
-package org.gxa.builder.BaseBuilderDemo;
+package org.gxa.builder.basebuilderdemo;
 
 /**
  * @author Guo Xi'an
@@ -53,6 +53,7 @@ public class User {
 
     public static void main(String[] args) {
         User user = User.newBuilder().age(11).name("Guo Xi'an").build();
+        System.out.println(user.getName());
     }
 
 }

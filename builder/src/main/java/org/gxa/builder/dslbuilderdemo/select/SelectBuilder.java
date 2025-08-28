@@ -1,11 +1,10 @@
-/**
- * TNG Digital Sdn Bhd
- * Copyright (c) 2017-2025 All Rights Reserved.
- */
-package org.gxa.builder.DSLBuilderDemo.select;
+package org.gxa.builder.dslbuilderdemo.select;
 
 import java.util.ArrayList;
 import java.util.List;
+import org.gxa.builder.dslbuilderdemo.common.AndStage;
+import org.gxa.builder.dslbuilderdemo.common.FromStage;
+import org.gxa.builder.dslbuilderdemo.common.WhereStage;
 
 /**
  * @author Guo Xi'an
